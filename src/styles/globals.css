@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.banner-text-width{
+  width: 100%;
+      font-size: 50px;
+        font-family: monospace;
+}
+.search-form-input{
+  /* min-width: 250px; */
+  width: 90%;
+}
+
+.search-button{
+  width: 300px;
+  background-image: linear-gradient(to right bottom, #051937, #0b1f41, #12254b, #192b55, #213160);
+}
